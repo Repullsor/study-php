@@ -11,13 +11,25 @@
     }
 
     function getVelocidadeMaxima() {
-        echo "A velocidade máxima deste carro é: $this->getVelocidadeMaxima km/h <br>";
+        echo "A velocidade máxima deste carro é: $this->velocidadeMaxima km/h <br>";
     }
 
   }
 
-  $toyot = new Carro;
+  $toyota = new Carro;
 
+  $toyota->modelo = "Supra";
+  $toyota->cor = "Laranja";
+
+  $toyota->setVelocidadeMaxima(400);
+
+  $toyota->getVelocidadeMaxima();
+
+  $nissan = new Carro;
+
+  $nissan->setVelocidadeMaxima(300);
+
+  $nissan->getVelocidadeMaxima();
 
 
 
